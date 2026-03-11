@@ -14,7 +14,7 @@ const globalErrorHandler = (
   let message = err.message || 'Something went wrong!';
   let errorDetails = err;
 
-  // Handle Zod validation errors
+  // Handle zod validation errors
   if (err instanceof ZodError) {
     statusCode = 400;
     message = 'Validation Error';
